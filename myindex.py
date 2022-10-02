@@ -1,14 +1,17 @@
-from dash import html, dcc
+from dash import Dash, html, dcc
+# import dash_html_components as html 
+# import dash_core_components as dcc 
+
 import dash
 from dash.dependencies import Input, Output
 import dash_bootstrap_components as dbc
 import pandas as pd
 import plotly.express as px
 
+from dash.dependencies import Input, Output
+
 from app import *
 from components import sidebar, dashboards, extratos
-
-
 
 
 # =========  Layout  =========== #

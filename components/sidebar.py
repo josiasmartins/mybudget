@@ -1,4 +1,5 @@
 import os
+from tkinter.ttk import Style
 import dash
 from dash import html, dcc
 from dash.dependencies import Input, Output, State
@@ -17,7 +18,16 @@ import pandas as pd
 
 # ========= Layout ========= #
 layout = dbc.Col([
-                
+                html.H1("MyBudgets", className="text-primary"),
+                html.P("By JOSIAS", className="text-info"),
+                html.Hr(),
+
+                #  secção PERFIL -----------
+                dbc.Button(
+                    id="botao_avatar", 
+                    children=[html.Img(src='/assets/img_hom.png', id='avatar_change', alt='avatar', className='perfil_name')],
+                    style={'background-color': 'transparent', 'border-color': 'transparent'}
+                )
             ])
 
 
